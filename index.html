@@ -9,10 +9,11 @@
 
   <nav>
     <h2>What's for Dinner?</h2>
-    <button>ADD A RECIPE</button>
+    <!-- <button class="add-recipe">ADD A RECIPE</button> -->
   </nav>
 
   <main>
+
     <section class="left-box">
       <h1>What are you looking for?</h1><h1 id="asterisk">*</h1>
       <section class="selections">
@@ -28,20 +29,26 @@
            <input type="radio" id="Dessert" name="drone" value="dessert">
            <label for="Dessert">Dessert</label>
         </div>
-        <div>
+        <!-- <div>
            <input type="radio" id="Entire-meal" name="drone" value="entire-eal">
            <label for="Etire-meal">Entire Meal</label>
-        </div>
-      </section>  
-      <button class="decider">LET'S COOK!</button>
+        </div> -->
+      </section>
+      <button class="selector">LET'S COOK!</button>
     </section>
+
     <section class="right-box">
-      <img class="cookpot" src="./assets/cookpot.svg">
+      <!-- <img class="cookpot" src="./assets/cookpot.svg"> -->
+      <p class="headline hidden">You should make:</p>
+      <p class="make-this hidden">this</p>
     </section>
+
   </main>
 
   </body>
 
   <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="data.js"></script>
+  <!-- <script type="text/javascript" src=> -->
 
 </html>
