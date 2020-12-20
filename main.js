@@ -2,11 +2,11 @@
 var sideRadio = document.querySelector('#Side');
 var mainRadio = document.querySelector('#Main-dish');
 var dessertRadio = document.querySelector('#Dessert');
-// var mealRadio = document.querySelector('#Entire-meal');
-// var addRecButton = document.querySelector('.add-recipe');
 var letsCookButton = document.querySelector('.lets-cook');
 var cookpot = document.querySelector('.cookpot');
 var makeThis = document.querySelector('.make-this')
+// var mealRadio = document.querySelector('#Entire-meal');
+// var addRecButton = document.querySelector('.add-recipe');
 
 // ⤵ event listeners
 // sideRadio.addEventListener('checked', showRandomSide);
@@ -24,14 +24,15 @@ function generateRandomIndex(array) {
 };
 
 function showRandomSelection() {
+  var randomDish;
   cookpot.classList.add('hidden');
-  if ('#Side'.checked) {
-    generateRandomIndex(sides)
-    console.log(sides[i])
-    makeThis.innerText(sides[i])
-  } else if ('#Main-dish'.checked) {
+  if ('#Side'.checked === true) {
+    generateRandomIndex(sides);
+    console.log(randomDish);
+    makeThis.innerText ${`sides[i]`};
+  } else if ('#Main-dish'.checked === true) {
     generateRandomIndex(mainDishes)
-  } else if ('#Dessert'.checked) {
+  } else if ('#Dessert'.checked === true) {
     generateRandomIndex(desserts)
   }
 }
@@ -41,7 +42,7 @@ function showRandomSelection() {
 //   cookpot.classList.add('hidden');
 //   recipe.innerText = generateRandomIndex(sides);
 // };
-//
+
 // function showRandomMain() {
 //   cookpot.classList.add('hidden');
 // };
