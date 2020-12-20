@@ -2,15 +2,15 @@
 var sideRadio = document.querySelector('#Side');
 var mainRadio = document.querySelector('#Main-dish');
 var dessertRadio = document.querySelector('#Dessert');
-// var mealRadio = document.querySelector('#Entire-meal');
-// var addRecButton = document.querySelector('.add-recipe');
-var selectionButton = document.querySelector('.selector');
+var letsCookButton = document.querySelector('.lets-cook');
 var cookpot = document.querySelector('.cookpot');
 var makeThis = document.querySelector('.make-this')
+// var mealRadio = document.querySelector('#Entire-meal');
+// var addRecButton = document.querySelector('.add-recipe');
 
 // ⤵ event listeners
-// sideRadio.addEventListener('click .selector', showRandomSide);
-selectionButton.addEventListener('click', showRandomSelection)
+// sideRadio.addEventListener('checked', showRandomSide);
+letsCookButton.addEventListener('click', showRandomSelection)
 
 // Build a function that will randomly generate either a Side, Main Dish, or Dessert, depending upon which radio button is clicked
   // need arrays for [Sides], [Main Dish], [Dessert]
@@ -24,17 +24,17 @@ function generateRandomIndex(array) {
 };
 
 function showRandomSelection() {
-  if ('#Side'.checked) {
-    generateRandomIndex(sides)
-    console.log(sides[i])
-    return makeThis.innerText(sides[i])
-  } else if ('#Main-dish'.checked) {
+  var randomDish;
+  cookpot.classList.add('hidden');
+  if ('#Side'.checked === true) {
+    generateRandomIndex(sides);
+    console.log(randomDish);
+    makeThis.innerText ${`sides[i]`};
+  } else if ('#Main-dish'.checked === true) {
     generateRandomIndex(mainDishes)
-  } else if ('#Dessert'.checked) {
+  } else if ('#Dessert'.checked === true) {
     generateRandomIndex(desserts)
   }
-//   console.log(randomIndex)
-//   return makeThis.innerText = randomIndex
 }
 
 //
@@ -42,7 +42,7 @@ function showRandomSelection() {
 //   cookpot.classList.add('hidden');
 //   recipe.innerText = generateRandomIndex(sides);
 // };
-//
+
 // function showRandomMain() {
 //   cookpot.classList.add('hidden');
 // };
