@@ -24,15 +24,15 @@ function generateRandomIndex(array) {
 };
 
 function showRandomSelection() {
-  var randomDish;
-  cookpot.classList.add('hidden');
-  if ('#Side'.checked === true) {
-    generateRandomIndex(sides);
-    console.log(randomDish);
-    makeThis.innerText ${`sides[i]`};
-  } else if ('#Main-dish'.checked === true) {
+  // var randomDish;
+  cookpot.classList.add('.hidden');
+  if (sideRadio.checked === true) {
+    // generateRandomIndex(sides);
+    // console.log(randomDish);
+    makeThis.innerText = (generateRandomIndex(sides));
+  } else if (mainRadio.checked === true) {
     generateRandomIndex(mainDishes)
-  } else if ('#Dessert'.checked === true) {
+  } else if (dessertRadio.checked === true) {
     generateRandomIndex(desserts)
   }
 }

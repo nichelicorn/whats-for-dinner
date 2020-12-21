@@ -24,8 +24,8 @@ button {
   background-color: #efefef;
 }
 
-main {
-
+.hidden {
+  display: none;
 }
 
 h1 {
