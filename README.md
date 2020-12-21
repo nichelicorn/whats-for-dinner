@@ -2,12 +2,16 @@
 
 What's for dinner? The ultimate question. This app will help you choose what to make! Just select a category, click `Let's cook!` and see what's for dinner!
 
-[This page is viewable from the GitHub pages](https://nichelicorn.github.io/whats-for-dinner/)
+[This page is viewable from GitHub!](https://nichelicorn.github.io/whats-for-dinner/)
 
 # What tech did we use?
+
 [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
 [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
 [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
 [Slack](https://slack.com/)
 
 # Future Additions?
@@ -23,6 +27,9 @@ Additional functionality will be added to this site, including:
 - Add local storage functionality
 
 # Contributors
+
 [Nichele D](https://github.com/nichelicorn)
+
 [Boone E](https://github.com/deadbelly)
+
 [Rachael T](https://github.com/rachael-t)
