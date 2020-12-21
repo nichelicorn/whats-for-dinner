@@ -4,17 +4,15 @@ What's for dinner? The ultimate question. This app will help you choose what to 
 
 [This page is viewable from GitHub!](https://nichelicorn.github.io/whats-for-dinner/)
 
-# What tech did we use?
 
-[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+### What tech did we use?
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Slack](https://slack.com/)
 
-[HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 
-[CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-
-[Slack](https://slack.com/)
-
-# Future Additions?
+### Future Additions?
 Additional functionality will be added to this site, including:
 - Add recipe ingredients and directions
 - Add error handling and clear button to reset page
@@ -26,10 +24,8 @@ Additional functionality will be added to this site, including:
 - Add page that allow users to view all recipes
 - Add local storage functionality
 
+
 # Contributors
-
-[Nichele D](https://github.com/nichelicorn)
-
-[Boone E](https://github.com/deadbelly)
-
-[Rachael T](https://github.com/rachael-t)
+- [Nichele D](https://github.com/nichelicorn)
+- [Boone E](https://github.com/deadbelly)
+- [Rachael T](https://github.com/rachael-t)
