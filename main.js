@@ -9,7 +9,6 @@ var makeThis = document.querySelector('.make-this')
 // var addRecButton = document.querySelector('.add-recipe');
 
 // ⤵ event listeners
-// sideRadio.addEventListener('checked', showRandomSide);
 letsCookButton.addEventListener('click', showRandomSelection)
 
 // Build a function that will randomly generate either a Side, Main Dish, or Dessert, depending upon which radio button is clicked
@@ -24,14 +23,11 @@ function generateRandomIndex(array) {
 };
 
 function showRandomSelection() {
-  // var randomDish;
-  cookpot.classList.add('.hidden');
+  cookpot.classList.add('hidden');
   if (sideRadio.checked === true) {
-    // generateRandomIndex(sides);
-    // console.log(randomDish);
     makeThis.innerText = (generateRandomIndex(sides));
   } else if (mainRadio.checked === true) {
-    generateRandomIndex(mainDishes)
+    makeThis.innerText = (generateRandomIndex(mainDishes));
   } else if (dessertRadio.checked === true) {
     generateRandomIndex(desserts)
   }
