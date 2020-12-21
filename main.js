@@ -4,16 +4,15 @@ var mainRadio = document.querySelector('#Main-dish');
 var dessertRadio = document.querySelector('#Dessert');
 var letsCookButton = document.querySelector('.lets-cook');
 var cookpot = document.querySelector('.cookpot');
-var makeThis = document.querySelector('.make-this')
+var headline = document.querySelector('.headline');
+var makeThis = document.querySelector('.make-this');
 var mealRadio = document.querySelector('#Entire-meal');
 // var addRecButton = document.querySelector('.add-recipe');
 
 // ⤵ event listeners
 letsCookButton.addEventListener('click', showRandomSelection)
 
-// Build a function that will randomly generate either a Side, Main Dish, or Dessert, depending upon which radio button is clicked
-  // need arrays for [Sides], [Main Dish], [Dessert]
-
+// ⤵ functions
 function generateRandomIndex(array) {
   for (var i = 0; i < array.length; i++) {
     var randomIndex = array[Math.floor(Math.random() * array.length)];
@@ -24,36 +23,17 @@ function generateRandomIndex(array) {
 
 function showRandomSelection() {
   cookpot.classList.add('hidden');
+  headline.classList.remove('hidden');
+  makeThis.classList.remove('hidden');
   if (sideRadio.checked === true) {
-    makeThis.innerText = (generateRandomIndex(sides));
+    makeThis.innerText = (`${generateRandomIndex(sides)}!`);
   } else if (mainRadio.checked === true) {
-    makeThis.innerText = (generateRandomIndex(mainDishes));
+    makeThis.innerText = (`${generateRandomIndex(mainDishes)}!`);
   } else if (dessertRadio.checked === true) {
-    makeThis.innerText = (generateRandomIndex(desserts));
+    makeThis.innerText = (`${generateRandomIndex(desserts)}!`);
   } else if (mealRadio.checked === true) (
-    makeThis.innerText = (`${generateRandomIndex(sides)}, ${generateRandomIndex(mainDishes)}, and ${generateRandomIndex(desserts)}`)
-  )
+    makeThis.innerText = (`${generateRandomIndex(sides)}, ${generateRandomIndex(mainDishes)}, and ${generateRandomIndex(desserts)}!`))
 }
-
-//
-// function showRandomSide() {
-//   cookpot.classList.add('hidden');
-//   recipe.innerText = generateRandomIndex(sides);
-// };
-
-// function showRandomMain() {
-//   cookpot.classList.add('hidden');
-// };
-//
-// function showRandomDessert() {
-//   cookpot.classList.add('hidden');
-// };
-
-// function showRandomMeal() {
-//   cookpot.classList.add('hidden');
-// }
-
-// when the [LET'S COOK] button is clicked, display randomly generated recipe name
 // Recipe name should appear below the phrase "You should make:" - styles medium size font, italic
 // Recipe name should appear in large font with an '!' at the end
 // Cookpot icon should disappear
