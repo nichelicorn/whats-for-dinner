@@ -33,8 +33,15 @@ function showRandomSelection() {
     makeThis.innerText = (`${generateRandomIndex(desserts)}!`);
   } else if (mealRadio.checked === true) (
     makeThis.innerText = (`${generateRandomIndex(sides)}, ${generateRandomIndex(mainDishes)}, and ${generateRandomIndex(desserts)}!`))
-}
-// Recipe name should appear below the phrase "You should make:" - styles medium size font, italic
-// Recipe name should appear in large font with an '!' at the end
-// Cookpot icon should disappear
 // [CLEAR] button should appear
+}
+
+// Future Functionality:
+// Add error handling, clear button to reset page
+// Add login page
+// Create section for users to add their own recipes
+// Create function that allows users to save favorite recipes
+// Allow users to delete selected recipes
+// Prevent appearance of duplicate recipes when using random generation feature
+// Add page that allow users to view all recipes
+// Add local storage functionality
