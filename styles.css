@@ -7,6 +7,10 @@ body {
   width: 100%;
 }
 
+.hidden {
+  visibility: hidden;
+}
+
 nav {
   background-color: #0fb9b1;
   display: flex;
@@ -22,10 +26,6 @@ button {
   border-radius: 10px;
   border: 0px;
   background-color: #efefef;
-}
-
-.hidden {
-  display: none;
 }
 
 h1 {
