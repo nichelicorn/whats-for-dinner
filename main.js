@@ -5,7 +5,7 @@ var dessertRadio = document.querySelector('#Dessert');
 var letsCookButton = document.querySelector('.lets-cook');
 var cookpot = document.querySelector('.cookpot');
 var makeThis = document.querySelector('.make-this')
-// var mealRadio = document.querySelector('#Entire-meal');
+var mealRadio = document.querySelector('#Entire-meal');
 // var addRecButton = document.querySelector('.add-recipe');
 
 // ⤵ event listeners
@@ -29,8 +29,10 @@ function showRandomSelection() {
   } else if (mainRadio.checked === true) {
     makeThis.innerText = (generateRandomIndex(mainDishes));
   } else if (dessertRadio.checked === true) {
-    generateRandomIndex(desserts)
-  }
+    makeThis.innerText = (generateRandomIndex(desserts));
+  } else if (mealRadio.checked === true) (
+    makeThis.innerText = (`${generateRandomIndex(sides)}, ${generateRandomIndex(mainDishes)}, and ${generateRandomIndex(desserts)}`)
+  )
 }
 
 //
